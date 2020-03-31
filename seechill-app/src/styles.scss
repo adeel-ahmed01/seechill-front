@@ -1,1 +1,28 @@
-/* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/theming';
+
+@include mat-core();
+
+
+/**
+* Colors: primary, accent, warn
+* Available color palettes: https://material.io/design/color/
+*/
+$seechill-app-primary: mat-palette($mat-blue, 900);
+$seechill-app-accent: mat-palette($mat-orange, 800, A100, A400);
+$seechill-app-warn: mat-palette($mat-red, 900);
+
+
+/**
+* Themes : light
+*/
+$seechill-app-theme: mat-light-theme($seechill-app-primary, $seechill-app-accent, $seechill-app-warn);
+
+
+@include angular-material-theme($seechill-app-theme);
+
+
+/**
+* General styles
+*/
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
