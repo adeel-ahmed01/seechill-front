@@ -13,7 +13,45 @@
 
 
 
+/**************
+ HEADER
+**************/
 
+/* Global */
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Left side */
+
+.left-side {
+    margin: 5px;
+}
+
+/* Right side */
+
+.right-side {
+    display: flex;
+}
+
+.right-side ul {
+    display: flex;
+    list-style: none;
+}
+
+.right-side ul li {
+    margin: 5px;
+}
+
+.search-bar {
+    margin: 5px;
+}
+
+/**************
+ END HEADER
+**************/
 
 /**************
  TEAMATES SECTION 
