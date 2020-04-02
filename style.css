@@ -44,6 +44,12 @@ header {
 
 .right-side ul li {
     margin: 5px;
+    height: 34px;
+}
+
+.right-side ul li a {
+    position: relative;
+    top: 8px;
 }
 
 .search-bar {
