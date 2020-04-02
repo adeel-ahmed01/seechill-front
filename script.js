@@ -4,14 +4,16 @@
  * pour ne pas avoir de soucis de scope de variables 
  *
  * */
+
 (function () {
+    
 
     /* VARIABLES */
     let defaultPosition = 1;
 
 
     /* METHODS */
-    function slide(pos) {
+    function triggerSlide(pos) {
         
         const allSlides = document.getElementsByClassName('one-slide');
 
@@ -26,33 +28,31 @@
 
         const targetSlide = allSlides[defaultPosition-1];
         targetSlide.style.display = 'flex';
+        targetSlide.style.justifyContent = 'space-between';
     }
 
 
-    function triggerSlide(pos) {
-        slide(defaultPosition += pos);
+    function onclickSlide(pos) {
+        triggerSlide(defaultPosition += pos);
     }
 
 
     /* EVENT LISTENERS */
 
     const advance = () => {
-        triggerSlide(1);
-        console.log("advanced");
-        
+        onclickSlide(1);        
     }
     const goback = () => {
-        triggerSlide(-1);
-        console.log("went back");
-        
+        onclickSlide(-1);
     }
 
     document.getElementById('prevButton').addEventListener('click', goback);
     document.getElementById('nextButton').addEventListener('click', advance);
 
 
-    /* ANIMATIONS  */
-    setInterval(() => { triggerSlide(1)}, 2000);
+    /* TRIGGERING  */
+    triggerSlide(defaultPosition);
+
+    
 
 })();
-   

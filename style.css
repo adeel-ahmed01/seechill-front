@@ -76,11 +76,11 @@ header {
 
 #teammates {
     width: 100%;
-    height: 450px;
     background-color: #f1f1f1;
     text-align: center;
     font-size: 2rem;
     font-weight: bold;
+    padding: 40px 0;
 }
 
 #teammates h2 {
@@ -106,7 +106,6 @@ header {
 #teammates .container .card .card-info {
     background-color: #fff;
     width: 80%;
-    height: 55px;
     margin: 0 auto;
     padding: 10px 0;
 }
@@ -121,6 +120,10 @@ header {
     font-size: 1.5rem;
 }
 
+.card-info .card-info-media i {
+    display: inline-block;
+}
+
 /**************
  END TEAMATES SECTION 
 **************/
@@ -132,8 +135,7 @@ header {
 #technos {
     background-color: #fff;
     width: 100%;
-    height: 280px;
-    padding: 15px 0;
+    padding: 40px 0;
     position: relative;
 }
 
@@ -148,13 +150,12 @@ header {
     margin: 0 auto;
 }
 
-#technos .slider-container .hidden {
+#technos .slider-container .one-slide {
     display: none;
 }
 
-#technos .slider-container .one-slide {
-    display: flex;
-    justify-content: space-between;
+#technos .slider-container .one-slide .illustration-logo {
+    height: 180px;
 }
 
 #technos .prev, .next {
