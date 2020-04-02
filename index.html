@@ -1,120 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <!-- Meta data -->
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!-- Styles -->
-        <link rel="stylesheet" href="style.css ">
+<head>
+    <!-- Meta data -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!-- Scripts -->
-        <script src="script.js" defer></script>
-        <script src="https://kit.fontawesome.com/5f876598f4.js" crossorigin="anonymous" defer></script>
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css ">
 
-        <!-- Title page and icon -->
-        <title>SeeChill</title>
-    </head>
+    <!-- Scripts -->
+    <script src="script.js" defer></script>
+    <script src="https://kit.fontawesome.com/5f876598f4.js" crossorigin="anonymous" defer></script>
 
-    <body>
-        <!-- Page header -->
-        <header>
+    <!-- Title page and icon -->
+    <title>SeeChill</title>
+</head>
 
-            <div class="left-side">
-                <a href="#">Logo</a>
+<body>
+    <!-- Page header -->
+    <header>
+
+        <div class="left-side">
+            <a href="#">Logo</a>
+        </div>
+        <nav class="right-side">
+            <ul>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Nos projets</a></li>
+                <li><a href="#">La Team</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="search-bar">
+                <input type="text" placeholder="Rechercher">
             </div>
-            <nav class="right-side">
+        </nav>
+    </header>
+
+    <!-- Main section -->
+    <main>
+
+        <!-- TEAMMATES SECTION -->
+        <section id="teammates">
+            <h2>Les membres de l'équipe</h2>
+            <div class="container">
+
+                <div class="card">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png"
+                        alt="Avatar de Issam">
+                    <div class="card-info">
+                        <h3>Issam BEN MABROUK</h3>
+                        <div class="card-info-media">
+                            <i class="fas fa-envelope-square"></i>
+                            <i class="fab fa-linkedin"></i>
+                            <i class="fab fa-github-square"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png"
+                        alt="Avatar de Addel">
+                    <div class="card-info">
+                        <h3>Adeel AHEMD</h3>
+                        <div class="card-info-media">
+                            <i class="fas fa-envelope-square"></i>
+                            <i class="fab fa-linkedin"></i>
+                            <i class="fab fa-github-square"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png"
+                        alt="Avatar de Chihab">
+                    <div class="card-info">
+                        <h3>Chihab BERKANE</h3>
+                        <div class="card-info-media">
+                            <i class="fas fa-envelope-square"></i>
+                            <i class="fab fa-linkedin"></i>
+                            <i class="fab fa-github-square"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="technos">
+            <h2>Nous utilisons ces technos</h2>
+
+            <!-- Slider : la ou ça glisse -->
+            <div class="slider-container">
+
+                <div class="one-slide">
+                    <div class="illustration-logo">Spring Boot (remplacer par logo)</div>
+                    <div class="illustration-logo">Angular (remplacer par logo)</div>
+                    <div class="illustration-logo">Android (remplacer par logo)</div>
+                </div>
+
+                <div class="one-slide hidden">
+                    <div class="illustration-logo">Vanilla JS (remplacer par logo)</div>
+                    <div class="illustration-logo">SASS (remplacer par logo)</div>
+                    <div class="illustration-logo">BLALA (remplacer par logo)</div>
+                </div>
+
+            </div>
+
+            <!-- Les boutons du slider -->
+            <a class="prev" id="prevButton">&#10094;</a>
+            <a class="next" id="nextButton">&#10095;</a>
+        </section>
+
+    </main>
+
+    <!-- Page footer -->
+    <footer>
+        <!-- Selon ce site https://www.1min30.com/developpement-web/footer-6639 , il faut au minimum ces rubriques : -->
+
+        <div class="footer_superieur">
+            <div>
+                <h3>Informations générales</h3>
                 <ul>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Nos projets</a></li>
-                    <li><a href="#">La Team</a></li>
+                    <li><a href="#">Mentions légales</a></li>
+                    <li><a href="#">Carte du site web</a></li>
+                    <li><a href="#">Informations sur l’identification de l’entreprise</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
-                <div class="search-bar">
-                    <input type="text" placeholder="Rechercher">
-                </div>
-            </nav>
-        </header>
+            </div>
+            <div>
+                <h3>Navigation</h3>
+                <ul>
+                    <li><a href="#">Aller a l'accueil</a></li>
+                    <li><a href="#">Retour en haut de la page</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Suivez nous</h3>
+                <ul>
+                    <li><a href="#">(logo)Linkedin</a></li>
+                    <li><a href="#">(logo)Twitter</a></li>
+                    <li><a href="#">(logo)Instagram</a></li>
+                    <li><a href="#">(logo)Facebook</a></li>
+                </ul>
+            </div>
+        </div>
 
-        <!-- Main section -->
-        <main>
+        <div class="footer_inferieur">
+            Powered by See Chill - 2020
+        </div>
 
-            <!-- TEAMMATES SECTION -->
-            <section id="teammates">
-                <h2>Les membres de l'équipe</h2>
-                <div class="container">
-        
-                    <div class="card">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png"
-                            alt="Avatar de Issam">
-                        <div class="card-info">
-                            <h3>Issam BEN MABROUK</h3>
-                            <div class="card-info-media">
-                                <i class="fas fa-envelope-square"></i>
-                                <i class="fab fa-linkedin"></i>
-                                <i class="fab fa-github-square"></i>
-                            </div>
-                        </div>
-                    </div>
-        
-                    <div class="card">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png"
-                            alt="Avatar de Addel">
-                        <div class="card-info">
-                            <h3>Adeel AHEMD</h3>
-                            <div class="card-info-media">
-                                <i class="fas fa-envelope-square"></i>
-                                <i class="fab fa-linkedin"></i>
-                                <i class="fab fa-github-square"></i>
-                            </div>
-                        </div>
-                    </div>
-        
-                    <div class="card">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png"
-                            alt="Avatar de Chihab">
-                        <div class="card-info">
-                            <h3>Chihab BERKANE</h3>
-                            <div class="card-info-media">
-                                <i class="fas fa-envelope-square"></i>
-                                <i class="fab fa-linkedin"></i>
-                                <i class="fab fa-github-square"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+    </footer>
+</body>
 
-            <section id="technos">
-                <h2>Nous utilisons ces technos</h2>
-
-                <!-- Slider : la ou ça glisse -->
-                <div class="slider-container">
-
-                    <div class="one-slide">
-                        <div class="illustration-logo">Spring Boot (remplacer par logo)</div>
-                        <div class="illustration-logo">Angular (remplacer par logo)</div>
-                        <div class="illustration-logo">Android (remplacer par logo)</div>
-                    </div>
-
-                    <div class="one-slide hidden">
-                        <div class="illustration-logo">Vanilla JS (remplacer par logo)</div>
-                        <div class="illustration-logo">SASS (remplacer par logo)</div>
-                        <div class="illustration-logo">BLALA (remplacer par logo)</div>
-                    </div>
-                    
-                </div>
-
-                <!-- Les boutons du slider -->
-                <a class="prev" id="prevButton">&#10094;</a>
-                <a class="next" id="nextButton">&#10095;</a>
-            </section>
-
-        </main>
-
-        <!-- Page footer -->
-        <footer>
-
-        </footer>
-    </body>
 </html>
