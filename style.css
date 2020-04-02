@@ -30,6 +30,10 @@ header {
 .left-side {
     margin: 5px;
 }
+.left-side a {
+    position: relative;
+    top: 8px;
+}
 
 /* Right side */
 
@@ -42,14 +46,12 @@ header {
     list-style: none;
 }
 
-.right-side ul li {
-    margin: 5px;
-    height: 34px;
-}
-
 .right-side ul li a {
     position: relative;
-    top: 8px;
+    top: 12px;
+    margin: 5px;
+    height: 34px;
+    
 }
 
 .search-bar {
