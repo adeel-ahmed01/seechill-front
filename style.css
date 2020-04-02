@@ -11,9 +11,6 @@
  END GENERAL
 **************/
 
-
-
-
 /**************
  HEADER
 **************/
@@ -30,6 +27,7 @@ header {
 .left-side {
     margin: 5px;
 }
+
 .left-side a {
     position: relative;
     top: 8px;
@@ -51,7 +49,6 @@ header {
     top: 12px;
     margin: 5px;
     height: 34px;
-    
 }
 
 .search-bar {
@@ -73,13 +70,6 @@ header {
  END HEADER
 **************/
 
-
-
-
-
-
-
-
 /**************
  TEAMATES SECTION 
 **************/
@@ -97,8 +87,6 @@ header {
     margin-bottom: 25px;
 }
 
-
-
 #teammates .container {
     width: 80%;
     margin: 0 auto;
@@ -113,13 +101,12 @@ header {
     width: 80%;
     margin: 0 auto;
     display: block;
-
 }
 
 #teammates .container .card .card-info {
     background-color: #fff;
     width: 80%;
-    height: 55px;    
+    height: 55px;
     margin: 0 auto;
     padding: 10px 0;
 }
@@ -137,11 +124,6 @@ header {
 /**************
  END TEAMATES SECTION 
 **************/
-
-
-
-
-
 
 /**************
  USED TECHNOS SECTION
@@ -161,12 +143,10 @@ header {
     margin-bottom: 20px;
 }
 
-
 #technos .slider-container {
     width: 80%;
     margin: 0 auto;
 }
-
 
 #technos .slider-container .hidden {
     display: none;
@@ -177,10 +157,9 @@ header {
     justify-content: space-between;
 }
 
-
 #technos .prev, .next {
     position: absolute;
-    background-color: rgba(0,0,0,0.8);
+    background-color: rgba(0, 0, 0, 0.8);
     cursor: pointer;
     top: 50%;
     width: auto;
@@ -199,3 +178,39 @@ header {
 /**************
  END USED TECHNOS SECTION
 **************/
+
+/********************
+BEGIN FOOTER SECTION
+********************/
+
+footer {
+    border: solid black;
+    display: flex;
+    flex-direction: column;
+}
+
+footer div div ul {
+    list-style: none;
+}
+
+footer div div ul li a {
+    text-decoration: none;
+    color: rgb(248, 248, 255);
+    font-size: 1.2em;
+}
+
+.footer_superieur {
+    display: flex;
+    justify-content: space-around;
+    background-color: #4848dbb6;
+}
+
+.footer_inferieur {
+    display: flex;
+    justify-content: center;
+    background-color: #4b4bb9b6;
+}
+
+/********************
+END FOOTER SECTION
+********************/
