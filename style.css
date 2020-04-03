@@ -144,6 +144,23 @@ header {
     margin-bottom: 20px;
 
 }
+
+#values .container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-end;
+}
+
+#values .container .flex-one {
+    flex: 1;
+}
+
+#values .container .flex-two {
+    flex: 2;
+    align-self: flex-start;
+}
+
 /**************
  VALUES SECTION 
 **************/
@@ -166,7 +183,7 @@ header {
 }
 
 #technos .slider-container {
-    width: 80%;
+    width: 75%;
     margin: 0 auto;
 }
 

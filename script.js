@@ -28,7 +28,7 @@
 
         const targetSlide = allSlides[defaultPosition-1];
         targetSlide.style.display = 'flex';
-        targetSlide.style.justifyContent = 'space-between';
+        targetSlide.style.justifyContent = 'space-around';
     }
 
 
