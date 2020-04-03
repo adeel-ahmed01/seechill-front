@@ -146,20 +146,50 @@ header {
 }
 
 #values .container {
-    width: 80%;
+    width: 60%;
     margin: 0 auto;
     display: flex;
-    align-items: flex-end;
 }
 
-#values .container .flex-one {
-    flex: 1;
+#values .container .sided-item:nth-child(1) {
+    width: 60%;
+    padding: 25px;
+    position: relative;
 }
 
-#values .container .flex-two {
-    flex: 2;
-    align-self: flex-start;
+#values .sided-item:nth-child(1) h3 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
 }
+
+#values .sided-item:nth-child(1) p {
+    text-align: justify;
+}
+
+#values .sided-item:nth-child(1)::after {
+    width: 1px;
+    height: 100%;
+    border-right: 1px solid rgba(196, 196, 196, 0.62);
+    content: "";
+    position: absolute;
+    right: 12px;
+    top: 0;
+}
+
+#values .container .sided-item:nth-child(2) {
+    width: 40%;
+}
+
+#values .container .sided-item:nth-child(2) > div {
+    padding: 0 20px;
+    margin: 0;
+}
+
+#values .container .sided-item:nth-child(2) > div:nth-child(1) {
+    margin-bottom: 15px;
+}
+
+
 
 /**************
  VALUES SECTION 
