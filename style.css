@@ -201,6 +201,7 @@ header {
     width: 60%;
     margin: 0 auto;
     display: flex;
+    justify-content: center;
 }
 
 #teammates .container .card {
