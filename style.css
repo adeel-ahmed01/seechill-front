@@ -163,6 +163,13 @@ header {
     color:#FFFFFF;
 }
 
+@media all and (max-width: 1300px) {
+    .activity .description .description-btn {
+        display:block;
+        margin:0.4em auto;
+    }
+}
+
 /* Right-side */
 
 .activity .image {
