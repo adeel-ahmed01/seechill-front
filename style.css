@@ -102,6 +102,57 @@ header {
 **************/
 
 /**************
+ ACTIVITIES SECTION
+**************/
+
+#activities {
+    width: 100%;
+    text-align: center;
+    padding: 25px;
+}
+
+#activities h2 {
+    font-weight: bold;
+    margin-bottom: 40px;
+    font-size: 3em;
+}
+
+.activity {
+    width: 60%;
+    display: flex;
+    margin: 0 auto;
+}
+
+.activity .description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: start;
+    width: 50%;
+    padding: 20px;
+}
+
+.activity .description h3 {
+    margin-bottom: 10px;
+}
+
+
+.activity .image {
+    width: 50%;
+    margin-left: 10px;
+}
+
+.activity .image img {
+    max-width: 400px;
+    max-height: 400px;
+}
+
+
+/**************
+ END ACTIVITIES SECTION
+**************/
+
+/**************
  TEAMATES SECTION 
 **************/
 
