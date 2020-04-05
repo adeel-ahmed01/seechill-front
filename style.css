@@ -392,8 +392,87 @@ header {
  END USED TECHNOS SECTION
 **************/
 
+
+
+
+
+/**************
+ USED TECHNOS SECTION
+**************/
+
+/**************
+CONTACT SECTION
+**************/
+
+#contact-rapide {
+    display: flex;
+    flex-direction: row;
+    border: 0.1px solid gray;
+}
+
+#partieGauche {
+    width: 50%;
+    height: 300px;
+    background-color: white;
+    padding-left: 20px;
+}
+
+#partieGauche h3 {
+    font-weight: bold;
+    font-size: 2em;
+    margin-top: 0px;
+}
+
+#partieGauche p {
+    margin-top: 5px;
+}
+
+#partieGauche div input {
+    margin-top: -5px;
+    width: 350px;
+    height: 20px;
+}
+
+#partieGauche textarea {
+    margin-top: -5px;
+    width: 705px;
+    height: 150px;
+    margin-bottom: 10px;
+}
+
+#partieGauche a {
+    text-decoration: none;
+    border : 0.5px solid black;
+    padding: 2px;
+    color: black;
+    margin-left: 350px;
+}
+
+
+#partieDroite {
+    width: 50%;
+    height: 300px;
+    background-color: rgba(147, 194, 104, 0.719);
+}
+
+#partieDroite h3{
+    color: white;
+    font-size: 2em;
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+
+#partieDroite p{
+    color: blue;
+    font-size: 1.2em;
+    margin-left: 30px;
+    margin-bottom: 15px;
+}
+
+
+
 /********************
-BEGIN FOOTER SECTION
+CONTACT SECTION
 ********************/
 
 footer {
