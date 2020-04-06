@@ -1,0 +1,33 @@
+{
+  "name": "seechill-front",
+  "version": "1.0.0",
+  "description": "seechill project, le prlus revolutionnaire",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adeel-ahmed01/seechill-front.git"
+  },
+  "keywords": [
+    "Chill",
+    "See",
+    "Seechill"
+  ],
+  "author": "Seechill",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adeel-ahmed01/seechill-front/issues"
+  },
+  "homepage": "https://github.com/adeel-ahmed01/seechill-front#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-file-include": "^2.1.1",
+    "gulp-filter": "^6.0.0",
+    "gulp-sass": "^4.0.2",
+    "node-sass": "^4.13.1",
+    "sass": "^1.26.3"
+  }
+}
