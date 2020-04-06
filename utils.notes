@@ -1,2 +1,11 @@
+Commandes Gulp pour le projet:
+- "gulp sass": compile le scss et donne un fichier css en sortie
+- "gulp scripts": concatène tous les fichiers .js en un unique fichier "main.js"
+- "gulp include": inclus les balises HTML
+- "gulp structure": créé une structure identique pour tous les répertoires sous "./src/pages/"
+
+
 Raccourcis VSCode utiles:
 -> anfn => arrow function
+
+

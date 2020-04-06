@@ -14,7 +14,7 @@ gulp.task('scripts', () => {
 
 
 /* HTML INTO HTML */
-gulp.task('include-templates', () => {
+gulp.task('include', () => {
     return gulp.src(['src/pages/**/*.html', '!src/pages/**/templates/*'])
     .pipe( include({prefix: '@@', basepath: '@file', }) )
     .pipe( gulp.dest('./dist') )
@@ -23,7 +23,7 @@ gulp.task('include-templates', () => {
 
 /* SASS */
 gulp.task('sass', () => {
-    return gulp.src('./src/pages/**/styles/*.scss')
+    return gulp.src(['./src/shared/styles/*.scss','./src/pages/**/styles/*.scss'])
     .pipe(sass().on('error', sass.logError))
     .pipe(concat('style.css'))
     .pipe(gulp.dest('./dist'))

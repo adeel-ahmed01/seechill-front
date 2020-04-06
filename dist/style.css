@@ -1,10 +1,66 @@
-/* header avec Slogan et Accroche */
-/* Left side */
-/* Right side */
+footer {
+  display: flex;
+  background-color: rgba(59, 59, 59, 0.925);
+  flex-direction: column; }
+  footer div div {
+    padding: 20px;
+    color: white; }
+    footer div div ul {
+      margin-top: 10px;
+      list-style: none; }
+      footer div div ul li {
+        margin-top: 5px;
+        margin-left: -40px; }
+        footer div div ul li a {
+          text-decoration: none;
+          color: ghostwhite;
+          font-size: 1em; }
+    footer div div h3 {
+      padding-bottom: 5px;
+      border-bottom: 1px solid white; }
+
+.footer_superieur {
+  display: flex;
+  justify-content: space-around; }
+
+.footer_inferieur {
+  display: flex;
+  color: white;
+  justify-content: center; }
+
 header {
   display: flex;
   justify-content: space-between; }
+  header .left-side {
+    margin: 5px; }
+    header .left-side a {
+      position: relative;
+      top: 8px; }
+  header .right-side {
+    display: flex; }
+    header .right-side ul {
+      display: flex;
+      list-style: none; }
+      header .right-side ul li a {
+        position: relative;
+        top: 12px;
+        margin: 5px;
+        height: 34px; }
+  header .search-bar {
+    margin: 5px; }
+    header .search-bar input {
+      padding-left: 5px;
+      width: 175px;
+      height: 34px;
+      background: rgba(196, 196, 196, 0.62);
+      border: 1px solid #060505;
+      box-sizing: border-box;
+      box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+      border-radius: 10px; }
 
+/* header avec Slogan et Accroche */
+/* Left side */
+/* Right side */
 #content-header {
   display: flex;
   flex-direction: column;
@@ -29,32 +85,3 @@ header {
   font-weight: bold;
   padding: 13px 23px;
   text-decoration: none; }
-
-.left-side {
-  margin: 5px; }
-  .left-side a {
-    position: relative;
-    top: 8px; }
-
-.right-side {
-  display: flex; }
-  .right-side ul {
-    display: flex;
-    list-style: none; }
-    .right-side ul li a {
-      position: relative;
-      top: 12px;
-      margin: 5px;
-      height: 34px; }
-
-.search-bar {
-  margin: 5px; }
-  .search-bar input {
-    padding-left: 5px;
-    width: 175px;
-    height: 34px;
-    background: rgba(196, 196, 196, 0.62);
-    border: 1px solid #060505;
-    box-sizing: border-box;
-    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 10px; }
