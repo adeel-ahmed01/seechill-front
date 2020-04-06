@@ -1,3 +1,11 @@
+Pour me lire correctement:
+- Installer l'extension Notes 1.0.0
+
+
+Commandes avant utilisation Gulp:
+- "npm install -g gulp"
+- "npm install -g sass" (mais je suis pas sur)
+
 Commandes Gulp pour le projet:
 - "gulp sass": compile le scss et donne un fichier css en sortie
 - "gulp scripts": concatène tous les fichiers .js en un unique fichier "main.js"
