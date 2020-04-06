@@ -30,6 +30,7 @@ gulp.task('sass', () => {
 });
 
 
+
 /* BASIC DIRECTORY STRUCTURE */
 gulp.task('structure', () => {
    
@@ -37,6 +38,7 @@ gulp.task('structure', () => {
     const pagesPath = './src/pages/';
     let pagesContent = fs.readdirSync(pagesPath);
 
+    console.log()
     
     // operate on each dir
     pagesContent.forEach( (elt) => {
@@ -44,7 +46,6 @@ gulp.task('structure', () => {
         let currentDirUrl = `${pagesPath}${elt}`;
         let currentDirContent = fs.readdirSync(currentDirUrl);
 
-        
         if(currentDirContent.length === 0 ) {
             const prefix = `./src/pages/${elt}`;
             console.log(prefix);
