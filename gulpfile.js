@@ -36,6 +36,7 @@ gulp.task('structure', () => {
     // get directories
     const pagesPath = './src/pages/';
     let pagesContent = fs.readdirSync(pagesPath);
+
     
     // operate on each dir
     pagesContent.forEach( (elt) => {
