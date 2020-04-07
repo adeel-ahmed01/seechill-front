@@ -17,3 +17,31 @@ Raccourcis VSCode utiles:
 -> anfn => arrow function
 
 
+*-> (Commandes git utiles) <-*
+
+# Lister les branches locales
+    -> "git branch"
+
+# Annuler les changements non commités d'un fichier
+    -> "git restore <nom du fichier>"
+    // example : git restore script.js
+
+# Voir l'historique des commits
+    -> "git log"
+
+# Annuler mais garder en mémoire les changements non commités de la branche en cours
+    -> "git stash"
+    // ** sert pour importer des changements d'une branche à une autre **
+
+# Appliquer les changements en mémoire sur la branche en cours
+    -> "git stash apply"
+
+# Voir les changements d'un fichier depuis le dernier commit
+    -> "git diff <nom du fichier>"
+    // example : git diff style.css
+
+# Basculer sur une branche remote qui n'existe pas en local
+    -> "git checkout --track <chemin branche distante>"
+    // example : git checkout --track origin/feature/SEEC-41-refonte-gulp
+
+*A COMPLETER*
