@@ -49,12 +49,14 @@ gulp.task('structure', () => {
         if(currentDirContent.length === 0 ) {
             const prefix = `./src/pages/${elt}`;
             console.log(prefix);
-           
+            // closeSync autour du openSync pour ne pas avoir le file descriptor(permet d'interragir avec le fichier ex : ecrire dedans, etc)
+            // donc file descripter non utile dans notre cas
+            // on passe 'a' pour ne pas overwrite et 'w' pour overwrite
+            fs.closeSync(fs.openSync(prefix + '/' + elt +'.html', 'a'))
             return gulp.src(['./empty/'], {allowEmpty: true})
                 .pipe(gulp.dest(`${prefix}/scripts`))
                 .pipe(gulp.dest(`${prefix}/templates`))
                 .pipe(gulp.dest(`${prefix}/styles`));
-            // ./
         }
         
     });   
