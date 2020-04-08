@@ -1,0 +1,71 @@
+/**************
+CONTACT SECTION
+**************/
+
+#contact-rapide {
+    display: flex;
+    flex-direction: row;
+    border: 0.1px solid gray;
+  }
+  
+  #partieGauche {
+    width: 50%;
+    height: 300px;
+    background-color: white;
+    padding-left: 20px;
+  
+    h3 {
+      font-weight: bold;
+      font-size: 2em;
+      margin-top: 0px;
+    }
+  
+    p {
+      margin-top: 5px;
+    }
+  
+    div input {
+      margin-top: -5px;
+      width: 350px;
+      height: 20px;
+    }
+  
+    textarea {
+      margin-top: -5px;
+      width: 705px;
+      height: 150px;
+      margin-bottom: 10px;
+    }
+  
+    a {
+      text-decoration: none;
+      border: 0.5px solid black;
+      padding: 2px;
+      color: black;
+      margin-left: 350px;
+    }
+  }
+  
+  #partieDroite {
+    width: 50%;
+    height: 300px;
+    background-color: rgba(147, 194, 104, 0.719);
+  
+    h3 {
+      color: white;
+      font-size: 2em;
+      margin-left: 30px;
+      margin-bottom: 30px;
+    }
+  
+    p {
+      color: blue;
+      font-size: 1.2em;
+      margin-left: 30px;
+      margin-bottom: 15px;
+    }
+  }
+  
+  /********************
+  CONTACT SECTION
+  ********************/
