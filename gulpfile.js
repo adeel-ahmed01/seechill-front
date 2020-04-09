@@ -6,41 +6,47 @@ const fs = require('fs');
 
 
 /* CONCATENATE JS FILES */
-gulp.task('scripts', () => {
+const scripts =  () => {
     return gulp.src('./src/pages/**/scripts/*.js')
     .pipe(concat('main.js'))
     .pipe(gulp.dest('./dist/'))
-});
+}
+gulp.task('scripts', scripts);
 
 
 /* HTML INTO HTML */
-gulp.task('include', () => {
+const htmlInclude = () => {
     return gulp.src(['src/pages/**/*.html', '!src/pages/**/templates/*'])
     .pipe( include({prefix: '@@', basepath: '@file', }) )
     .pipe( gulp.dest('./dist') )
-});
+}
+gulp.task('include', htmlInclude);
 
 
 /* SASS */
-gulp.task('sass', () => {
+const sassing = () => {
     return gulp.src(['./src/shared/styles/*.scss','./src/pages/**/styles/*.scss'])
     .pipe(sass().on('error', sass.logError))
     .pipe(concat('style.css'))
     .pipe(gulp.dest('./dist'))
-});
+}
+gulp.task('sass', sassing);
 
+
+/* IMAGES */
+const images = () => {
+    gulp.src('./img/*')
+    .pipe(gulp.dest('./dist/img'))
+}
+gulp.task('images', images)
 
 
 /* BASIC DIRECTORY STRUCTURE */
-gulp.task('structure', () => {
+const structuring = () => {
    
-    // get directories
     const pagesPath = './src/pages/';
     let pagesContent = fs.readdirSync(pagesPath);
-
-    console.log()
     
-    // operate on each dir
     pagesContent.forEach( (elt) => {
         
         let currentDirUrl = `${pagesPath}${elt}`;
@@ -48,10 +54,6 @@ gulp.task('structure', () => {
 
         if(currentDirContent.length === 0 ) {
             const prefix = `./src/pages/${elt}`;
-            console.log(prefix);
-            // closeSync autour du openSync pour ne pas avoir le file descriptor(permet d'interragir avec le fichier ex : ecrire dedans, etc)
-            // donc file descripter non utile dans notre cas
-            // on passe 'a' pour ne pas overwrite et 'w' pour overwrite
             fs.closeSync(fs.openSync(prefix + '/' + elt +'.html', 'a'))
             return gulp.src(['./empty/'], {allowEmpty: true})
                 .pipe(gulp.dest(`${prefix}/scripts`))
@@ -60,4 +62,14 @@ gulp.task('structure', () => {
         }
         
     });   
-});
+}
+gulp.task('structure', structuring);
+
+
+
+const all = () => {
+    scripts();
+    sassing();
+    htmlInclude();
+}
+gulp.task('build', all);
