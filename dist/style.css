@@ -28,6 +28,10 @@ footer {
   color: white;
   justify-content: center; }
 
+* {
+  margin: 0;
+  box-sizing: border-box; }
+
 header {
   display: flex;
   justify-content: space-between; }
@@ -62,9 +66,7 @@ header {
   background-color: yellow;
   color: palevioletred; }
 
-/**************
- ACTIVITIES SECTION
-**************/
+/* NO EFFECTS HERE */
 #activities {
   width: 100%;
   text-align: center;
@@ -124,59 +126,82 @@ header {
    END ACTIVITIES SECTION
   **************/
 
-/**************
-CONTACT SECTION
-**************/
+/* NO EFFECTS HERE */
 #contact-rapide {
   display: flex;
   flex-direction: row;
-  border: 0.1px solid gray; }
-
-#partieGauche {
-  width: 50%;
-  height: 300px;
-  background-color: white;
-  padding-left: 20px; }
-  #partieGauche h3 {
-    font-weight: bold;
-    font-size: 2em;
-    margin-top: 0px; }
-  #partieGauche p {
-    margin-top: 5px; }
-  #partieGauche div input {
-    margin-top: -5px;
-    width: 350px;
-    height: 20px; }
-  #partieGauche textarea {
-    margin-top: -5px;
-    width: 705px;
-    height: 150px;
-    margin-bottom: 10px; }
-  #partieGauche a {
-    text-decoration: none;
-    border: 0.5px solid black;
-    padding: 2px;
-    color: black;
-    margin-left: 350px; }
-
-#partieDroite {
-  width: 50%;
-  height: 300px;
-  background-color: rgba(147, 194, 104, 0.719); }
-  #partieDroite h3 {
-    color: white;
-    font-size: 2em;
-    margin-left: 30px;
-    margin-bottom: 30px; }
-  #partieDroite p {
-    color: blue;
-    font-size: 1.2em;
-    margin-left: 30px;
-    margin-bottom: 15px; }
-
-/********************
+  border: 0.1px solid gray;
+  /********************
   CONTACT SECTION
-  ********************/
+  ********************/ }
+  #contact-rapide #partieGauche {
+    width: 70%;
+    background-color: white;
+    padding-left: 20px;
+    padding: 20px 40px; }
+    #contact-rapide #partieGauche h3 {
+      font-weight: bold;
+      font-size: 2em;
+      margin-top: 0px; }
+    #contact-rapide #partieGauche p {
+      margin-top: 5px;
+      margin-bottom: 15px; }
+    #contact-rapide #partieGauche input {
+      width: 40%;
+      height: 30px;
+      background-color: #E5E8E8;
+      border: none;
+      display: inline-block;
+      padding: 5px 3px;
+      font-size: 1rem; }
+      #contact-rapide #partieGauche input:nth-child(1) {
+        margin-right: 7%; }
+      #contact-rapide #partieGauche input:hover, #contact-rapide #partieGauche input:focus {
+        border: none;
+        outline: none;
+        background-color: #bcc4c4; }
+    #contact-rapide #partieGauche textarea {
+      margin-bottom: 10px;
+      background-color: #E5E8E8;
+      display: block;
+      border: none;
+      width: 87%;
+      margin-top: 25px;
+      padding: 5px 3px;
+      resize: none;
+      font-size: 1.3rem; }
+      #contact-rapide #partieGauche textarea:hover, #contact-rapide #partieGauche textarea:focus {
+        outline: none;
+        border: none; }
+    #contact-rapide #partieGauche button {
+      border: none;
+      padding: 0.35em 1.2em;
+      text-align: center;
+      border: 0.1em solid #000000;
+      border-radius: 0.12em;
+      box-sizing: border-box;
+      text-decoration: none;
+      font-family: 'Roboto',sans-serif;
+      font-weight: 300;
+      color: #000000;
+      transition: all 0.2s; }
+      #contact-rapide #partieGauche button:hover {
+        background-color: grey;
+        color: #FFFFFF; }
+  #contact-rapide #partieDroite {
+    width: 50%;
+    height: 300px;
+    background-color: rgba(147, 194, 104, 0.719); }
+    #contact-rapide #partieDroite h3 {
+      color: white;
+      font-size: 2em;
+      margin-left: 30px;
+      margin-bottom: 30px; }
+    #contact-rapide #partieDroite p {
+      color: blue;
+      font-size: 1.2em;
+      margin-left: 30px;
+      margin-bottom: 15px; }
 
 /* header avec Slogan et Accroche */
 /* Left side */

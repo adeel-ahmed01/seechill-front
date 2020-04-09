@@ -1,18 +1,22 @@
-/**************
-CONTACT SECTION
-**************/
+//
+@import './../../../themes/effects';
 
+
+//
+$input-color: #E5E8E8;
+
+
+//
 #contact-rapide {
-    display: flex;
-    flex-direction: row;
-    border: 0.1px solid gray;
-  }
-  
+  display: flex;
+  flex-direction: row;
+  border: 0.1px solid gray;
+    
   #partieGauche {
-    width: 50%;
-    height: 300px;
+    width: 70%;
     background-color: white;
     padding-left: 20px;
+    padding: 20px 40px;
   
     h3 {
       font-weight: bold;
@@ -22,27 +26,49 @@ CONTACT SECTION
   
     p {
       margin-top: 5px;
+      margin-bottom: 15px;
     }
   
-    div input {
-      margin-top: -5px;
-      width: 350px;
-      height: 20px;
+    input {
+      width: 40%;
+      height: 30px;
+      background-color: $input-color;
+      border: none;
+      display: inline-block;
+      padding: 5px 3px;
+      font-size: 1rem;
+
+      &:nth-child(1) {
+        margin-right: 7%;
+      }
+
+      &:hover, &:focus {
+        border: none;
+        outline: none;
+        background-color: darken($input-color, 15%);
+      }
     }
   
     textarea {
-      margin-top: -5px;
-      width: 705px;
-      height: 150px;
       margin-bottom: 10px;
+      background-color: $input-color;
+      display: block;
+      border: none;
+      width: 87%;
+      margin-top: 25px;
+      padding: 5px 3px;
+      resize: none;
+      font-size: 1.3rem;
+
+      &:hover, &:focus {
+        outline: none;
+        border: none;
+      }
     }
   
-    a {
-      text-decoration: none;
-      border: 0.5px solid black;
-      padding: 2px;
-      color: black;
-      margin-left: 350px;
+    button {
+      border: none;
+      @include button;
     }
   }
   
@@ -69,3 +95,4 @@ CONTACT SECTION
   /********************
   CONTACT SECTION
   ********************/
+}
