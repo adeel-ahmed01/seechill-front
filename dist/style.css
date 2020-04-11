@@ -62,10 +62,6 @@ header {
       box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
       border-radius: 10px; }
 
-#enRouge {
-  background-color: yellow;
-  color: palevioletred; }
-
 /* NO EFFECTS HERE */
 #activities {
   width: 100%;
@@ -387,3 +383,109 @@ header {
 /**************
    VALUES SECTION 
   **************/
+
+#form-contact {
+  display: flex;
+  flex-direction: column;
+  background-color: #ecececfb;
+  border: black 0.2px solid;
+  align-items: center;
+  justify-content: center;
+  font-family: "Gill Sans", sans-serif;
+  color: #333; }
+  #form-contact :nth-child(3) {
+    margin-top: 55px; }
+
+.foo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  width: 800px;
+  height: 50px;
+  color: #333; }
+
+.foo-r {
+  margin-right: 10px; }
+
+.foo-l {
+  margin-left: 10px; }
+
+#motif {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 800px;
+  height: 100px; }
+
+.message {
+  height: 300px; }
+
+#message {
+  overflow: hidden;
+  height: 280px;
+  width: 500px;
+  border: 1px solid #d9d9d9; }
+
+input {
+  width: 500px;
+  height: 30px;
+  border: 1px solid #d9d9d9; }
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  outline: 0;
+  box-shadow: none;
+  border: 0 !important;
+  /*background: #2c3e50;*/
+  background: #ecececfb;
+  background-image: none;
+  margin: 1.4px; }
+  select::-ms-expand {
+    display: none; }
+
+/* Remove IE arrow */
+/* Custom Select */
+.select {
+  width: 500px;
+  height: 40px;
+  position: relative;
+  display: flex;
+  line-height: 3;
+  background: #edededfb;
+  border: #a3a3a3fb 0.3px solid;
+  /*background: #2c3e50;*/
+  overflow: hidden;
+  /*border-radius: .25em;*/ }
+
+select {
+  flex: 1;
+  padding: 0 .5em;
+  color: #333;
+  cursor: pointer;
+  font-size: 1.1em; }
+
+/* Arrow */
+.select::after {
+  content: '\25BC';
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0 1em;
+  background: #34495e;
+  background: #ccccccfb;
+  cursor: pointer;
+  pointer-events: none;
+  -webkit-transition: .25s all ease;
+  -o-transition: .25s all ease;
+  transition: .25s all ease; }
+
+.select:hover::after {
+  color: #333; }
+
+/* Transition */
