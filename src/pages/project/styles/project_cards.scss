@@ -1,0 +1,53 @@
+$bgc1: #f1f1f1;
+$bgc2: rgba(0, 0, 0, 0.5);
+
+#project-cards {
+    background-color: $bgc1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    padding: 40px;
+
+    .card {
+        width: 27%;
+        margin: 40px 0;
+        background-color: #fff;
+
+        .card-content {
+            height: 250px;
+            background-image: url('https://cdn.pixabay.com/photo/2016/10/10/18/40/news-1729539_1280.jpg');
+            background-size: 100% 250px;
+
+            .bandeau {
+                background-color: $bgc2;
+                padding: 10px 20px;
+                text-align: center;
+                font-size: 1em;
+                color: aliceblue;
+            }
+        }
+
+        .card-footer {
+            padding: 10px 20px;
+            .tags {
+                margin: 0 0 20px 0;
+
+                span {
+                    padding: 3px 6px;
+                    border-radius: 3px;
+                    background-color: rgb(102, 194, 137);
+                    margin: 0 3px;
+                }
+            }
+
+            .actions {
+                
+                button {
+                    border: none;
+                    background-color: none;
+                }
+            }
+        }
+    }
+}

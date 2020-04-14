@@ -387,3 +387,39 @@ header {
 /**************
    VALUES SECTION 
   **************/
+
+#project-cards {
+  background-color: #f1f1f1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
+  padding: 40px; }
+  #project-cards .card {
+    width: 27%;
+    margin: 40px 0;
+    background-color: #fff; }
+    #project-cards .card .card-content {
+      height: 250px;
+      background-image: url("https://cdn.pixabay.com/photo/2016/10/10/18/40/news-1729539_1280.jpg");
+      background-size: 100% 250px; }
+      #project-cards .card .card-content .bandeau {
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 10px 20px;
+        text-align: center;
+        font-size: 1em;
+        color: aliceblue; }
+    #project-cards .card .card-footer {
+      padding: 10px 20px; }
+      #project-cards .card .card-footer .tags {
+        margin: 0 0 20px 0; }
+        #project-cards .card .card-footer .tags span {
+          padding: 3px 6px;
+          border-radius: 3px;
+          background-color: #66c289;
+          margin: 0 3px; }
+      #project-cards .card .card-footer .actions {
+        color: pink; }
+        #project-cards .card .card-footer .actions button {
+          border: none;
+          background-color: none; }
