@@ -18,7 +18,7 @@ $card1: #ffffff;
 
     .card {
         position: relative;
-        width: 27%;
+        width: 30%;
         margin: 40px 0;
         background-color: $card1;
 
@@ -35,9 +35,12 @@ $card1: #ffffff;
 
             button {
                 border: none;
-                background-color: none;
+                background-color: $card1;
                 float: right;
                 cursor: pointer;
+                font-weight: bold;
+                font-size: 1.7em;
+                outline: none;
             }
         }
 
@@ -77,10 +80,12 @@ $card1: #ffffff;
                     background: none;
                     margin: 0;
 
-                    &.menu-opener {
+                    &.descriptor-open {
                         position: absolute;
                         right: 10px;
                         cursor: pointer;
+                        color: black;
+                        outline: none;
                     }
                 }
             }

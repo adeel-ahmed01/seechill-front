@@ -3,10 +3,7 @@
     /* VARIABLES */
     const opener = document.getElementById('descriptor-opener');
     const descriptorElt = document.getElementById('descriptor-div');
-    const closer = document.getElementById('le-frmeur');
-
-    console.log("HEllo, ca marche ma guele");
-    
+    const closer = document.getElementById('le-frmeur');    
     
     
     opener.addEventListener('click', () => {

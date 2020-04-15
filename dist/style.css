@@ -425,7 +425,7 @@ header {
   padding: 40px; }
   #project-cards .card {
     position: relative;
-    width: 27%;
+    width: 30%;
     margin: 40px 0;
     background-color: #ffffff; }
     #project-cards .card .descriptor {
@@ -440,9 +440,12 @@ header {
       animation: slidein 0.3s; }
       #project-cards .card .descriptor button {
         border: none;
-        background-color: none;
+        background-color: #ffffff;
         float: right;
-        cursor: pointer; }
+        cursor: pointer;
+        font-weight: bold;
+        font-size: 1.7em;
+        outline: none; }
     #project-cards .card .card-content {
       height: 270px;
       background-image: url("https://cdn.pixabay.com/photo/2016/10/10/18/40/news-1729539_1280.jpg");
@@ -469,7 +472,9 @@ header {
           border: none;
           background: none;
           margin: 0; }
-          #project-cards .card .card-footer .actions button.menu-opener {
+          #project-cards .card .card-footer .actions button.descriptor-open {
             position: absolute;
             right: 10px;
-            cursor: pointer; }
+            cursor: pointer;
+            color: black;
+            outline: none; }
