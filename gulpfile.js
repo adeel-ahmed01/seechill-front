@@ -14,12 +14,10 @@ const scripts =  () => {
     pagesContent.forEach((elt) => {
         let currentSource = `${pagesPath}${elt}/scripts/*.js`;
         gulp.src(currentSource)
-        .pipe(concat(`${elt}.js`))
-        .pipe(gulp.dest(`./dist/${elt}`))
-       
+        .pipe(concat(`${elt}/${elt}.js`))
+        .pipe(gulp.dest(`./dist`))
     });
-    return true;
-}
+};
 gulp.task('scripts', scripts);
 
 

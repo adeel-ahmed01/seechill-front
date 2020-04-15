@@ -10,8 +10,9 @@
 <link rel="stylesheet" href="../style.css ">
 
 <!-- Scripts -->
-<script src="../main.js" defer></script>
 <script src="https://kit.fontawesome.com/5f876598f4.js" crossorigin="anonymous" defer></script>
+    
+    <script src="project.js" defer></script>
     <title>SeeChill - Projets</title>
 </head>
 <body>
@@ -38,8 +39,10 @@
 
     <div class="card">
 
-        <div class="descriptor" hidden>
-            Lorem, ipsum dolor.
+        <div class="descriptor" id="descriptor-div">
+            <button class="fermer" id="le-frmeur">
+                &times;
+            </button>
         </div>
 
         <div class="card-content">
@@ -56,7 +59,7 @@
                 <button>
                     <i></i>
                 </button>
-                <button class="menu-opener" id="chenmu">
+                <button class="descriptor-open" id="descriptor-opener">
                     <i class="fas fa-ellipsis-v"></i>
                 </button>
             </div>

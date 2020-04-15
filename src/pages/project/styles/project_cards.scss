@@ -1,5 +1,11 @@
+@import './../../../themes/_effects';
+
+// colors
 $bgc1: #f1f1f1;
 $bgc2: rgba(0, 0, 0, 0.5);
+$font1: aliceblue;
+$card1: #fff;
+
 
 #project-cards {
     background-color: $bgc1;
@@ -14,18 +20,25 @@ $bgc2: rgba(0, 0, 0, 0.5);
         position: relative;
         width: 27%;
         margin: 40px 0;
-        background-color: #fff;
+        background-color: $card1;
 
         .descriptor {
+            display: none;
             position: absolute;
-            background-color: #f1f1f1;
+            background-color:$card1;
+            background-size: 0;
             bottom: 0;
             left: 0;
             right: 0;
-            height: 0px;
-            width: 100%;
-            display: none;
-            transition: 1s height;
+            height: 0;
+            animation: slidein 0.3s;
+
+            button {
+                border: none;
+                background-color: none;
+                float: right;
+                cursor: pointer;
+            }
         }
 
         .card-content {
@@ -39,7 +52,7 @@ $bgc2: rgba(0, 0, 0, 0.5);
                 text-align: center;
                 font-size: 1em;
                 font-weight: 400;
-                color: aliceblue;
+                color: $font1;
             }
         }
 

@@ -1,4 +1,4 @@
-/* NO EFFECTS HERE */
+/* MIXINS */
 @mixin button {
     padding: 0.35em 1.2em;
     text-align: center;
@@ -17,3 +17,15 @@
     }
 }
 
+/* ANIMATIONS */
+@keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 200%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+}

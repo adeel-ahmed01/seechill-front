@@ -66,6 +66,16 @@ header {
   background-color: yellow;
   color: palevioletred; }
 
+/* MIXINS */
+/* ANIMATIONS */
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 200%; }
+  to {
+    margin-left: 0%;
+    width: 100%; } }
+
 #project-cards {
   background-color: #f1f1f1;
   display: flex;
@@ -79,15 +89,20 @@ header {
     margin: 40px 0;
     background-color: #fff; }
     #project-cards .card .descriptor {
+      display: none;
       position: absolute;
-      background-color: #f1f1f1;
+      background-color: #fff;
+      background-size: 0;
       bottom: 0;
       left: 0;
       right: 0;
-      height: 0px;
-      width: 100%;
-      display: none;
-      transition: 1s height; }
+      height: 0;
+      animation: slidein 0.3s; }
+      #project-cards .card .descriptor button {
+        border: none;
+        background-color: none;
+        float: right;
+        cursor: pointer; }
     #project-cards .card .card-content {
       height: 270px;
       background-image: url("https://cdn.pixabay.com/photo/2016/10/10/18/40/news-1729539_1280.jpg");
@@ -119,7 +134,16 @@ header {
             right: 10px;
             cursor: pointer; }
 
-/* NO EFFECTS HERE */
+/* MIXINS */
+/* ANIMATIONS */
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 200%; }
+  to {
+    margin-left: 0%;
+    width: 100%; } }
+
 #activities {
   width: 100%;
   text-align: center;
@@ -179,7 +203,16 @@ header {
    END ACTIVITIES SECTION
   **************/
 
-/* NO EFFECTS HERE */
+/* MIXINS */
+/* ANIMATIONS */
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 200%; }
+  to {
+    margin-left: 0%;
+    width: 100%; } }
+
 #contact-rapide {
   display: flex;
   flex-direction: row;
