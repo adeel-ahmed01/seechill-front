@@ -76,74 +76,6 @@ header {
     margin-left: 0%;
     width: 100%; } }
 
-#project-cards {
-  background-color: #f1f1f1;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: stretch;
-  padding: 40px; }
-  #project-cards .card {
-    position: relative;
-    width: 27%;
-    margin: 40px 0;
-    background-color: #fff; }
-    #project-cards .card .descriptor {
-      display: none;
-      position: absolute;
-      background-color: #fff;
-      background-size: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      height: 0;
-      animation: slidein 0.3s; }
-      #project-cards .card .descriptor button {
-        border: none;
-        background-color: none;
-        float: right;
-        cursor: pointer; }
-    #project-cards .card .card-content {
-      height: 270px;
-      background-image: url("https://cdn.pixabay.com/photo/2016/10/10/18/40/news-1729539_1280.jpg");
-      background-size: 100% 270px; }
-      #project-cards .card .card-content .bandeau {
-        background-color: rgba(0, 0, 0, 0.5);
-        padding: 10px 20px;
-        text-align: center;
-        font-size: 1em;
-        font-weight: 400;
-        color: aliceblue; }
-    #project-cards .card .card-footer {
-      padding: 10px 20px; }
-      #project-cards .card .card-footer .tags {
-        margin: 0 0 20px 0; }
-        #project-cards .card .card-footer .tags span {
-          padding: 3px 6px;
-          border-radius: 3px;
-          background-color: #66c289;
-          margin: 0 3px; }
-      #project-cards .card .card-footer .actions {
-        position: relative; }
-        #project-cards .card .card-footer .actions button {
-          border: none;
-          background: none;
-          margin: 0; }
-          #project-cards .card .card-footer .actions button.menu-opener {
-            position: absolute;
-            right: 10px;
-            cursor: pointer; }
-
-/* MIXINS */
-/* ANIMATIONS */
-@keyframes slidein {
-  from {
-    margin-left: 100%;
-    width: 200%; }
-  to {
-    margin-left: 0%;
-    width: 100%; } }
-
 #activities {
   width: 100%;
   text-align: center;
@@ -473,3 +405,71 @@ header {
 /**************
    VALUES SECTION 
   **************/
+
+/* MIXINS */
+/* ANIMATIONS */
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 200%; }
+  to {
+    margin-left: 0%;
+    width: 100%; } }
+
+#project-cards {
+  background-color: #f1f1f1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
+  padding: 40px; }
+  #project-cards .card {
+    position: relative;
+    width: 27%;
+    margin: 40px 0;
+    background-color: #fff; }
+    #project-cards .card .descriptor {
+      display: none;
+      position: absolute;
+      background-color: #fff;
+      background-size: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 0;
+      animation: slidein 0.3s; }
+      #project-cards .card .descriptor button {
+        border: none;
+        background-color: none;
+        float: right;
+        cursor: pointer; }
+    #project-cards .card .card-content {
+      height: 270px;
+      background-image: url("https://cdn.pixabay.com/photo/2016/10/10/18/40/news-1729539_1280.jpg");
+      background-size: 100% 270px; }
+      #project-cards .card .card-content .bandeau {
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 10px 20px;
+        text-align: center;
+        font-size: 1em;
+        font-weight: 400;
+        color: aliceblue; }
+    #project-cards .card .card-footer {
+      padding: 10px 20px; }
+      #project-cards .card .card-footer .tags {
+        margin: 0 0 20px 0; }
+        #project-cards .card .card-footer .tags span {
+          padding: 3px 6px;
+          border-radius: 3px;
+          background-color: #66c289;
+          margin: 0 3px; }
+      #project-cards .card .card-footer .actions {
+        position: relative; }
+        #project-cards .card .card-footer .actions button {
+          border: none;
+          background: none;
+          margin: 0; }
+          #project-cards .card .card-footer .actions button.menu-opener {
+            position: absolute;
+            right: 10px;
+            cursor: pointer; }
