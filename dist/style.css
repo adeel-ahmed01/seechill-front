@@ -427,11 +427,11 @@ header {
     position: relative;
     width: 27%;
     margin: 40px 0;
-    background-color: #fff; }
+    background-color: #ffffff; }
     #project-cards .card .descriptor {
       display: none;
       position: absolute;
-      background-color: #fff;
+      background-color: #ffffff;
       background-size: 0;
       bottom: 0;
       left: 0;

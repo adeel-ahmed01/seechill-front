@@ -6,17 +6,21 @@ const fs = require('fs');
 
 
 /* CONCATENATE JS FILES */
-const scripts =  () => {
+const scripts =  (done) => {
    
    const pagesPath = './src/pages/';
    let pagesContent = fs.readdirSync(pagesPath);
 
-    pagesContent.forEach((elt) => {
-        let currentSource = `${pagesPath}${elt}/scripts/*.js`;
+    pagesContent.forEach( (elt) => {
+        let currentSource = `${pagesPath}${elt}/scripts/*.js`;       
+
         gulp.src(currentSource)
         .pipe(concat(`${elt}/${elt}.js`))
         .pipe(gulp.dest(`./dist`))
     });
+
+    done();
+
 };
 gulp.task('scripts', scripts);
 
@@ -73,10 +77,20 @@ const structuring = () => {
 gulp.task('structure', structuring);
 
 
-
+/* TOUTES LES TACHES POUR BUILD */
 const all = () => {
     scripts();
     sassing();
     htmlInclude();
 }
 gulp.task('build', all);
+
+
+
+gulp.task('watch', () => {
+    gulp.watch('./src/pages/**/scripts/*.js', scripts);
+    gulp.watch('./src/pages/**/styles/*.scss', sassing);
+    gulp.watch('./src/pages/**/*.html', htmlInclude);
+    gulp.watch('./src/pages/**/templates/*.html', htmlInclude);
+    
+});
