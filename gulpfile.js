@@ -7,9 +7,18 @@ const fs = require('fs');
 
 /* CONCATENATE JS FILES */
 const scripts =  () => {
-    return gulp.src('./src/pages/**/scripts/*.js')
-    .pipe(concat('main.js'))
-    .pipe(gulp.dest('./dist/'))
+   
+   const pagesPath = './src/pages/';
+   let pagesContent = fs.readdirSync(pagesPath);
+
+    pagesContent.forEach((elt) => {
+        let currentSource = `${pagesPath}${elt}/scripts/*.js`;
+        gulp.src(currentSource)
+        .pipe(concat(`${elt}.js`))
+        .pipe(gulp.dest(`./dist/${elt}`))
+       
+    });
+    return true;
 }
 gulp.task('scripts', scripts);
 

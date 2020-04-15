@@ -9,21 +9,36 @@ $bgc2: rgba(0, 0, 0, 0.5);
     align-items: stretch;
     padding: 40px;
 
+
     .card {
+        position: relative;
         width: 27%;
         margin: 40px 0;
         background-color: #fff;
 
+        .descriptor {
+            position: absolute;
+            background-color: #f1f1f1;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 0px;
+            width: 100%;
+            display: none;
+            transition: 1s height;
+        }
+
         .card-content {
-            height: 250px;
+            height: 270px;
             background-image: url('https://cdn.pixabay.com/photo/2016/10/10/18/40/news-1729539_1280.jpg');
-            background-size: 100% 250px;
+            background-size: 100% 270px;
 
             .bandeau {
                 background-color: $bgc2;
                 padding: 10px 20px;
                 text-align: center;
                 font-size: 1em;
+                font-weight: 400;
                 color: aliceblue;
             }
         }
@@ -42,10 +57,18 @@ $bgc2: rgba(0, 0, 0, 0.5);
             }
 
             .actions {
-                
+                position: relative;
+
                 button {
                     border: none;
-                    background-color: none;
+                    background: none;
+                    margin: 0;
+
+                    &.menu-opener {
+                        position: absolute;
+                        right: 10px;
+                        cursor: pointer;
+                    }
                 }
             }
         }
