@@ -36,84 +36,92 @@
 </header>
 
     <main>
+        <!-- Voir quelques soucis css et atrribut style css dans certaines balises -->
         <section id="form-contact">
-    <div>
-        <h2>Vous souhaitez nous contactez ?</h2>
-    </div>
-    <div>
-        <h3>Veuillez remplire le formulaire ci dessous</h3>
-    </div>
+            <div>
+                <h2>Vous souhaitez nous contactez ?</h2>
+            </div>
+            <div>
+                <img src="../../img/simplemail.svg" alt="un triangle aux trois côtés égaux" height="87px" width="100px" />
+                <!--<h3>Veuillez remplire le formulaire ci dessous</h3>-->
+            </div>
 
-    <!--L'OBJET DE LA DEMANDE-->
-    <div class="foo">
-        <div class="foo-l">
-            <h4>Objet de la demande </h4>
-        </div>
+            <div style="margin-top: 10px;margin-bottom: 10px;">
+                <svg height="6" width="300">
+                    <polygon points="0,3 147,1.5 150,0 153,1.5 300,3 153,4.5 150,6 147,4.5" />
+                </svg>
+            </div>
 
-        <div class="select foo-r">
-            <select name="slct" id="slct">
-                <option selected disabled>Choisir motif de la demande</option>
-                <option value="1">Raison 1</option>
-                <option value="2">Raison 2</option>
-                <option value="3">Raison 3</option>
-            </select>
-        </div>
-    </div>
+            <!--L'OBJET DE LA DEMANDE-->
+            <div class="foo">
+                <div class="foo-l">
+                    <h4>Objet de la demande </h4>
+                </div>
 
-    <div class="foo">
-        <div class="foo-l">
-            <label>
-                Prénom :
-            </label>
-        </div>
-        <div class="foo-r">
-            <input type="text" name="prenom" id="prenom" />
-        </div>
-    </div>
-    <div class="foo">
-        <div class="foo-l">
-            <label>
-                Nom :
-            </label>
-        </div>
-        <div class="foo-r">
-            <input type="text" name="nom" id="nom" />
-        </div>
-    </div>
-    <div class="foo">
-        <div class="foo-l">
-            <label>
-                Email :
-            </label>
-        </div>
-        <div class="foo-r">
-            <input type="text" name="prenom" id="prenom" />
-        </div>
-    </div>
-    <div class="foo">
-        <div class="foo-l">
-            <label>
-                Téléphone :
-            </label>
-        </div>
-        <div class="foo-r">
-            <input type="text" name="nom" id="nom" />
-        </div>
-    </div>
-    <div class="foo message">
-        <div class="foo-l">
-            <label>
-                Message :
-            </label>
-        </div>
-        <div class="foo-r">
-            <textarea name="message" id="message"></textarea>
-        </div>
-    </div>
-    <div>
-        <button>Soumettre</button>
-    </div>
-</section>
+                <div class="select foo-r">
+                    <select name="slct" id="slct">
+                        <option selected disabled>Choisir motif de la demande</option>
+                        <option value="1">Raison 1</option>
+                        <option value="2">Raison 2</option>
+                        <option value="3">Raison 3</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="foo">
+                <div class="foo-l">
+                    <label>
+                        Prénom :
+                    </label>
+                </div>
+                <div class="foo-r">
+                    <input type="text" name="prenom" id="prenom" />
+                </div>
+            </div>
+            <div class="foo">
+                <div class="foo-l">
+                    <label>
+                        Nom :
+                    </label>
+                </div>
+                <div class="foo-r">
+                    <input type="text" name="nom" id="nom" />
+                </div>
+            </div>
+            <div class="foo">
+                <div class="foo-l">
+                    <label>
+                        Email :
+                    </label>
+                </div>
+                <div class="foo-r">
+                    <input type="text" name="prenom" id="prenom" />
+                </div>
+            </div>
+            <div class="foo">
+                <div class="foo-l">
+                    <label>
+                        Téléphone :
+                    </label>
+                </div>
+                <div class="foo-r">
+                    <input type="text" name="nom" id="nom" />
+                </div>
+            </div>
+            <div class="foo message">
+                <div class="foo-l">
+                    <label>
+                        Message :
+                    </label>
+                </div>
+                <div class="foo-r">
+                    <textarea name="message" id="message"></textarea>
+                </div>
+            </div>
+            <div>
+                <a href="#" class="soumettre">Soumettre</a>
+            </div>
+        </section>
 
     </main>
 
